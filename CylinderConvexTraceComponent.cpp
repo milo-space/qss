@@ -19,6 +19,7 @@ UCylinderConvexTraceComponent::UCylinderConvexTraceComponent()
 
     SetCollisionEnabled(ECollisionEnabled::QueryOnly);
     SetGenerateOverlapEvents(false);
+    SetCollisionResponseToChannel(ECC_WorldStatic, ECR_Block);
 }
 
 void UCylinderConvexTraceComponent::OnRegister()
